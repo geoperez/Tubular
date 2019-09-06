@@ -12,7 +12,7 @@
   "author": "",
   "scripts": {
     "build": "parcel build ./src/index.html --no-source-maps -d ../wwwroot",
-    "build-debug": "parcel ./src/index.html -d ../wwwroot",
+    "build:debug": "parcel ./src/index.html -d ../wwwroot",
     "start": "parcel ./src/index.html --open --port 8080 -d ../wwwroot",
     "lint": "tslint './src/**/*.ts*' --format stylish",
     "lint:fix": "tslint './src/**/*.ts*' --format stylish --force --fix"
