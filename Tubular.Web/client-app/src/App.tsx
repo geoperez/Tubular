@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {DataGrid} from 'tubular-react';
 import {ColumnsDefinition} from './ColumnsDefinition';
-import { getTubularClient } from './services/fetch';
 
 const App: React.FunctionComponent = () => {
     return (
@@ -10,7 +9,7 @@ const App: React.FunctionComponent = () => {
             <DataGrid
                 gridName='Orders'
                 columns={ColumnsDefinition}
-                dataSource={getTubularClient('/api/tubular/paged')}
+                dataSource={'http://localhost:51244/api/tubular/paged'}
             />
         </>
     );
